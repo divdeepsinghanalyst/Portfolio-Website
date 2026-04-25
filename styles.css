@@ -1036,11 +1036,19 @@ section {
 }
 
 .project-two-col,
+.project-three-col,
 .certs-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 1rem;
   margin-top: 1rem;
+}
+
+.project-two-col {
+  grid-template-columns: 1fr 1fr;
+}
+
+.project-three-col {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .project-card {
@@ -1728,6 +1736,10 @@ section {
     gap: 2rem;
   }
 
+  .project-three-col {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .certs-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1782,6 +1794,7 @@ section {
 
   .skills-wrap,
   .project-two-col,
+  .project-three-col,
   .certs-grid,
   .form-row,
   .dash-row {
